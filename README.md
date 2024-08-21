@@ -1,6 +1,6 @@
 # CI1210 - Projetos Digitais e Microprocessadores
 
-Bem-vindo(a) ao curso de Projetos Digitais e Microprocessadores, ofertado pelo [DInF][https://web.inf.ufpr.br/dinf/] (Departamento de Informática) da UFPR (Universidade Federal do Paraná)
+Bem-vindo(a) ao curso de Projetos Digitais e Microprocessadores, ofertado pelo [DInF](https://web.inf.ufpr.br/dinf/) (Departamento de Informática) da UFPR (Universidade Federal do Paraná)
 
 ## Objetivo
 
