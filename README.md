@@ -16,8 +16,8 @@ Capacitar o aluno a analisar, conceber, projetar e implementar Sistemas Digitais
 - R J Tocci e N S Wiedmer. Sistemas Digitais. ISBN 8587918206. Pearson, 2003.
 
 ### RISC-V - Organização de computadores - ISA
-- [Edson Borin. An Introduction to Assembly Programming with RISC-V. 1sd Ed. 2021][https://riscv-programming.org/book/riscv-book.html]
-- [David Patterson e Andrew Waterman. Guia prático RISC-V Atlas de uma Arquitetura Aberta. Primeira edição, 1.0.0. 2019][http://riscvbook.com/portuguese/guia-pratico-risc-v-1.0.0.pdf]
+- [Edson Borin. An Introduction to Assembly Programming with RISC-V. 1sd Ed. 2021](https://riscv-programming.org/book/riscv-book.html)
+- [David Patterson e Andrew Waterman. Guia prático RISC-V Atlas de uma Arquitetura Aberta. Primeira edição, 1.0.0. 2019](http://riscvbook.com/portuguese/guia-pratico-risc-v-1.0.0.pdf)
 - Petterson, D. A.; Hennessy, J. L. Computer Organization and Design RISC-V Edition: the hardware software interface. 2018.
 
 
