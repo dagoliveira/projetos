@@ -15,7 +15,7 @@
 - Funções (convenção)
 - Recursão
 
-# RISC-V - Cíclo único
+# RISC-V - Ciclo único
 - Caminho de dados - Instruções aritméticas
 - Caminho de dados - Instruções de memória
 - Caminho de dados - Instruções de salto (incondicional)
