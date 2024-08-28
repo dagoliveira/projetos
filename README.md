@@ -6,6 +6,10 @@ Bem-vindo(a) ao curso de Projetos Digitais e Microprocessadores, ofertado pelo [
 
 Capacitar o aluno a analisar, conceber, projetar e implementar Sistemas Digitais de média complexidade (processador RISC de 32 bits).
 
+## Conteúdo
+
+[Acesse o conteúdo da disciplina](./conteudo.md)
+
 ## Bibliografia
 
 ### Circuitos - CMOS - Baixo nível
