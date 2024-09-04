@@ -1,6 +1,8 @@
 # CMOS
-- Transistor MOSFET e CMOS
-- Portas lógicas em CMOS
+Capítulo do livro do prof. Hexsel sobre CMOS: [link](https://www.inf.ufpr.br/roberto/ci068/cmos.pdf)
+
+- Transistor MOSFET e CMOS (vídeos: [MOSFET](https://www.youtube.com/watch?v=2melpVNjecI), [CMOS e porta NOT](https://www.youtube.com/watch?v=rQN0KVdicDU))
+- Portas lógicas em CMOS (vídeos: [NAND e NOR](https://www.youtube.com/watch?v=DIXG1w0wDdo))
 - Circuitos Combinacionais implementados em CMOS
 - Atraso em circuitos combinacionais: tempo de propagação e tempo de contaminação
 - Temporização de Flip-flops: tempo de setup e tempo de hold
