@@ -8,4 +8,4 @@ Faça o download do PDF para visualizar a lista
 
 ## Assembly
 
-- Instruções aritméticas e saltos: [PDF](./assembly_aritmetica_salto.pdf), [Soluções](./assembly_aritmetica_salto_solucoes)
+- [PDF](./assembly.pdf), [Soluções](./assembly_solucoes)

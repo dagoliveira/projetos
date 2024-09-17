@@ -1,0 +1,190 @@
+\documentclass{article}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc} % arruma utf8
+\usepackage[T1]{fontenc} % arruma ctrl+c com utf8
+\usepackage{indentfirst}
+
+\title{Lista de Exercícios RISC-V}
+\author{Gabriel G. de Brito \and Daniel Oliveira}
+\date{Segundo semestre de 2024}
+
+\begin{document}
+
+\maketitle
+
+A melhor maneira de resolver esses exercícios é com o debugger do emulador EGG.
+Lembre sempre da instrução \textit{ebreak} no final!
+
+\tableofcontents
+
+\section{Instruções Aritméticas}
+
+Para testar suas resoluções aos exercícios dessa seção, carregue seu código no
+debugger do emulador e use os comandos \textit{set} e \textit{print} para
+modificar manualmente o valor dos registradores e verificá-los depois.
+
+Por exemplo, para testar a resolução a um exercício hipotético que deve somar 1
+ao valor em \textit{a0}:
+
+\begin{verbatim}
+$ egg -d teste.asm
+EGG - Emulador Genérico do Gabriel - versão 3.0.0
+Entre 'help' para ver uma lista de comandos
+Debuggando RISC-V IM (32 bits)
+egg> set a0 41
+egg> continue
+Parado na chamada BREAK no endereço 0x8
+nenhuma instrução no endereço 0x8
+Registrador a0: mudou de 0x00000000 para 0x0000002a
+egg> print a0
+0x0000002a
+egg> q
+até mais!
+\end{verbatim}
+
+% Eu tentei usar o pacote exercise porém apesar da doc dizer que ele suporta
+% babel, eu não consegui escrever em português.
+\begin{enumerate}
+	\item Escreva um programa que calcule a média entre dois números armazenados
+	nos registradores \textit{a0} e \textit{a1}. Guarde o resultado em
+	\textit{a0}.
+
+	\item Resolva o exercício anterior sem utilizar instruções de multiplicação.
+
+	\item Escreva um programa que calcule a média entre três números armazenados
+	nos registradores \textit{a0}, \textit{a1} e \textit{a2}. Guarde o resultado
+	em \textit{a0}.
+
+	\item Escreva um programa que calcule a expressão $b^2 - 4 \cdot a \cdot c$ (o
+	$\Delta$ de uma equação de segundo grau), onde \textit{a}, \textit{b} e
+	\textit{c} estão armazenados nos registradores \textit{a0}, \textit{a1} e
+	\textit{a2}, respectivamente. Guarde o valor em \textit{a0}.
+
+	\item Resolva o exercício anterior utilizando somente duas instruções de
+	multiplicação.
+
+	\item Escreva um programa que, dados números \textit{a} e \textit{b}
+	armazenados nos registradores \textit{a0} e \textit{a1}, respectivamente,
+	guarde o valor 1 em \textit{a0} caso $a < b$, e o valor 0 caso contrário. Não
+	use instruções de salto, \textit{slt} ou \textit{sltu}.
+
+	\item Escreva um programa que, dado um número armazenado em \textit{a0},
+	guarde em \textit{a0} o valor do segundo byte desse número e em \textit{a1} o
+	valor do quarto byte. Exemplo de execução:
+
+	\begin{verbatim}
+$ egg -d solucoes/bytes.asm
+EGG - Emulador Genérico do Gabriel - versão 3.0.0
+Entre 'help' para ver uma lista de comandos
+Debuggando RISC-V IM (32 bits)
+egg> set a0 0xcafebabe
+egg> c
+Parado na chamada BREAK no endereço 0x18
+nenhuma instrução no endereço 0x18
+Registrador t0: mudou de 0x00000000 para 0x000000ba
+Registrador a0: mudou de 0x00000000 para 0x000000ba
+Registrador a1: mudou de 0x00000000 para 0x000000ca
+egg> p a0
+0x000000ba
+egg> p a1
+0x000000ca
+egg> q
+até mais!
+	\end{verbatim}
+
+	\item Resolva o exercício anterior sem utilizar as instruções \textit{and} e
+	\textit{andi}. Dica: use \textit{xor} e \textit{slli}.
+
+	\item Escreva um programa que calcule o valor em representação sinal-magnitude
+	do número em complemento de dois armazenado no registrador \textit{a0}. Guarde
+	o resultado em \textit{a0}. Não utilize instruções de salto. Nota: números
+	negativos em sinal magnitude vão aparecer com os últimos dígitos hexadecimais
+	8, 9, A, B, C, D, E ou F. Exemplo: -1 é 0x80000001.
+
+	\item (Desafio) Computadores modernos costumam suportar operações aritméticas
+	nativas de números de 32 ou 64 bits. Caso seja necessário fazer aritmética com
+	números maiores, é necessário implementar funções em software que utilizam as
+	instruções da arquitetura para somar números maiores - de 128 bits por
+	exemplo. Essas funções costumam ser chamadas de operações em ``BigInt'' e
+	demoram mais, pois, ao contrário de operações em números suportados pela
+	arquitetura, precisam de muito mais que apenas uma instrução para serem
+	executadas.
+
+	A arquitetura que estudamos - RISC-V 32 IM - suporta apenas números de até 32
+	bits. Escreva um programa que some dois números de 64 bits A e B, onde a parte
+	baixa de A está armazenada em \textit{a0}, a parte alta em \textit{a1} e,
+	semelhantemente, a parte baixa de B está armazenada em \textit{a2} e a parte
+	alta em \textit{a3}. Não utilize instruções de salto. Guarde a parte baixa do
+	resultado em \textit{a0} e a parte alta em \textit{a1}.
+\end{enumerate}
+
+\section{Instruções de salto}
+
+Semelhantemente à seção anterior, utilize os comandos \textit{set} e
+\textit{print} para testar as soluções.
+
+\begin{enumerate}
+	\item Escreva um programa que calcule o fatorial de um número armazenado no
+	registrador \textit{a0}, guardando o resultado em \textit{a0}.
+
+	\item Escreva um programa que calcule o n-ésimo número da sequência de
+	Fibonacci, onde n está no registrador \textit{a0}, armazenando-o no
+	registrador \textit{a0}. Note que tanto o primeiro quanto o segundo número de
+	Fibonacci são 1.
+
+	\item Escreva um programa que calcule a quantidade de bits 1 em um número
+	binário armazenado no registrador \textit{a0}. Guarde o resultado em
+	\textit{a0}.
+
+	\item Escreva um programa que conte a quantidade de ``trailing zeros'' de um
+	número binário armazenado no registrador \textit{a0}, guardando o resultado em
+	\textit{a0}. ``Trailing zeros'' são os zeros à direita do número, ou seja, os
+	bits zero antes do primeiro bit 1. Por exemplo, o número de ``trailing zeros''
+	do número binário 1011000 é 3.
+
+	\item Escreva um programa que verifique se um número armazenado em \textit{a0}
+	é primo. Guarde 1 em \textit{a0} caso seja, e 0 caso contrário.
+
+	\item (Desafio) Escreva um programa que faça um loop 5 vezes, porém a única
+	instrução de salto permitida é \textit{jalr}, e não é permitido o uso do seu
+	imediato (ou seja, o imediato de todas as ocorrências de \textit{jalr} no
+	código deve ser 0). Chamadas de ambiente (\textit{ecall} e \textit{ebreak})
+	também não são permitidas. Dica: utilize as instruções \textit{slti} e
+	\textit{andi}.
+\end{enumerate}
+
+\section{Instruções de acesso à memória}
+
+Semelhantemente as seções anteriores, utilize os comandos \textit{set} e
+\textit{print} para testar as resoluções, dessa vez também na memória (com a
+sintaxe @). Crie também vetores no próprio código.
+
+Nessa seção, é de extrema importância lembrar que inteiros são armazenados em 4
+bytes na memória de processadores RISC-V!
+
+\begin{enumerate}
+	\item Escreva um programa que armazene os n primeiros números naturais em um
+	vetor, onde n está armazenado no registrador \textit{a0}.
+
+	\item Escreva um programa que some os elementos de dois vetores A e B na
+	memória, guardando em um terceiro vetor C, tal que $C_i = A_i + B_i$.
+
+	\item Escreva um programa que armazene a sequência de Fibonacci até o n-ésimo
+	número na memória, onde n está armazenado no registrador \textit{a0}. Para
+	simplificar, considere apenas $n \geq 2$.
+
+	\item Escreva um programa que calcule a média aritmética dos valores em um
+	vetor e guarde o resultado no registrador \textit{a0}.
+
+	\item Dados dois vetores de mesmo tamanho: um vetor de valores e outro de
+	pesos, escreva um programa que calcule a média ponderada dos valores do
+	primeiro vetor com seus respectivos pesos no segundo vetor. Guarde o resultado
+	no registrador \textit{a0}.
+\end{enumerate}
+
+\section{Chamada de funções}
+
+TODO
+
+\end{document}
