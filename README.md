@@ -10,6 +10,10 @@ Capacitar o aluno a analisar, conceber, projetar e implementar Sistemas Digitais
 
 [Acesse o conteúdo da disciplina](./conteudo.md)
 
+## Lista de Exercícios
+
+As listas de exercícios podem ser acessadas [aqui](./lista_exercicios)
+
 ## Bibliografia
 
 ### Circuitos - CMOS - Baixo nível
