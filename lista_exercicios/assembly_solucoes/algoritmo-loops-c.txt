@@ -1,0 +1,27 @@
+========
+do-while:
+
+Insira um label "do". Então, insira as instruções para computar o bloco do loop.
+Após, insira as instruções para computar a condição, guardando em um registrador
+que vamos chamar de "cond". Então, insira a instrução "bne cond, zero, do".
+
+=====
+while:
+
+Insira um label, que vamos chamar de "while". Então, insira as instruções para
+computar a condição, guardando o resultado em um registrador que vamos chamar de
+"cond". Após, insira a instrução "beq cond, zero, fora_while", onde "fora_while"
+é um label que vamos adicionar depois. Agora, insira as instruções que computam
+o bloco do loop. Por fim, insira a instrução "jal zero, while" e o label
+"fora_while".
+
+===
+for:
+
+Insira as instruções para inicializar a iteração (lado esquerdo do loop). Então,
+insira um label que chamaremos de "for". Após, insira as instruções para
+computar a condição, guardando em um registrador que chamaremos de "cond".
+Insira a instrução "beq cond, zero, fora_for", onde "fora_for" é um label que
+adicionaremos depois. Agora, insira as instruções do bloco do loop. Por fim,
+insira as instruções para computar a iteração (lado direito do loop) e a
+instrução "jal zero, for".
