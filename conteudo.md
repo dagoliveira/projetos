@@ -11,6 +11,11 @@ Capítulo do livro do prof. Hexsel sobre CMOS: [link](https://www.inf.ufpr.br/ro
 - Somadores avançados e comparação de atraso: Ripple Cary, Carry-Select e Carry Lookahead 
 
 # RISC-V - Assembly
+
+Vídeos do Gabriel Brito, criador do emulador [EGG](https://egg.gboncoffee.dev.br/pt/), sobre RISC-V e o próprio EGG: [playlist](https://www.youtube.com/playlist?list=PLFe3Zrf4uj4vlRF21jK3vzfCuSSJ5I_uB)
+
+Exemplo de tradução de C para assembly do RISC-V: [vídeo](https://www.youtube.com/watch?v=lvqWr3jG8Uc)
+
 - Instruções aritméticas
 - Instruções de memória
 - Desvio e saltos
