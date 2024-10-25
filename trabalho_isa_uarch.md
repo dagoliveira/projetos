@@ -25,6 +25,7 @@ O conjunto de instruções deverá suportar a implementação das estruturas bá
 ### O que deve ser entregue
 
 - Um *green card* contendo as instruções e a descrição do que cada uma delas faz, especialmente os saltos e desvios
+- Um descritivo detalhando as informações importantes para a implementação da ISA. Por exemplo, quais os formatos de instrução, como construir e estender os bits de um valor imediato.
 - Uma lista dos registradores e o modelo de programação (convenção), informando qual o nome do registrador, sua função e se deve ser salvo ou temporário
 
 
