@@ -16,7 +16,8 @@ Uma ISA deve ser definida respeitando os seguintes requisitos:
 - Deverá ter instruções aritméticas, lógicas, desvio, salto e memória
 - Deve ser uma arquitetura load/store, que opera somente sobre registradores
 - O tamanho da palavra será de 32bits (tamanho de um INT)
-- A memória será indexada por byte (byte a byte), sendo que fazer o load de uma palavra carrega 4 posições da memória
+- A memória não precisa ser indexada/endereçada por byte (byte a byte). Portanto, podem fazer uma memória de instruções onde cada posição tem 24 bits, e uma memória de dados onde cada posição tem 32 bits
+    - Contudo, quem desejar fazer uma arquitetura com memórias endereçadas por byte, com escrita não alinhada, fique a vontade. Porém, fazer toda a parte de "byte steering" com mais de um módulo/banco de memória não é muito simples
 
 Instruções diferenciadas, como FMA, podem ser utilizadas e se corretamente implementadas (na segunda parte do trabalho, "implementação da ISA"), receberá um ponto extra.
 
