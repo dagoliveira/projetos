@@ -15,9 +15,8 @@ Uma ISA deve ser definida respeitando os seguintes requisitos:
 - A quantidade de registradores é de livre escolha, porém deve ser justificada
 - Deverá ter instruções aritméticas, lógicas, desvio, salto e memória
 - Deve ser uma arquitetura load/store, que opera somente sobre registradores
-- O tamanho da palavra, tamanho do registrador e valores que serão operados pela ULA, também será de 12 bits (tamanho de um INT)
+- O tamanho da palavra, tamanho do registrador e valores que serão operados pela ULA, também serão de 12 bits (tamanho de um INT -> 12 bits)
 - A memória não precisa ser indexada/endereçada por byte (byte a byte), ou no caso um byte e meio. Portanto, podem fazer uma memória de instruções onde cada posição tem 12 bits, e uma memória de dados onde cada posição também tem 12 bits
-    - Contudo, quem desejar fazer uma arquitetura com memórias endereçadas por byte, com escrita não alinhada, fique a vontade. Porém, fazer toda a parte de "byte steering" com mais de um módulo/banco de memória não é muito simples
 
 Instruções diferenciadas, como FMA ou vetoriais, podem ser utilizadas e se corretamente implementadas (na segunda parte do trabalho, "implementação da ISA"), receberá um ponto extra.
 
@@ -53,11 +52,25 @@ Deve ser escrito um código assembly que teste todas as instruções criadas. Es
 
 Considere todas as possibilidades de uma única instrução, como tomar ou não o desvio em uma instrução de desvio condicional (e.g., BEQ).
 
+Também deverá ser entregue um código que soma dois vetores, tanto o assembly como o código em linguagem de máquina. O código deve implementar a estrutura de repetição. Use como exemplo o seguinte código em C:
+
+```
+void main(){
+    int A[10], B[10], C[10], i;
+    for(i=0; i<10; i++){
+        A[i] = i;
+        B[i] = 10-i;
+    }
+    for(i=0; i<10; i++)
+        C[i] = A[i] + B[i];
+}
+```
+
 
 ### O que deve ser entregue
 
-- O código em assembly da sua ISA
-- O código em linguagem de máquina (binário)
+- Os códigos em assembly da sua ISA
+- Os códigos em linguagem de máquina (binário)
 - Um descritivo, mostrando os passos usados para transformar o assembly em linguagem de máquina
 - Qualquer programa, ou script, que tenha usado para traduzir o assembly em linguagem de máquina (assembler, ou montador)
 
