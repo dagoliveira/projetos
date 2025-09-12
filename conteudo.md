@@ -1,4 +1,5 @@
 # CMOS
+
 Capítulo do livro do prof. Hexsel sobre CMOS: [link](https://www.inf.ufpr.br/roberto/ci068/cmos.pdf)
 
 - Transistor MOSFET e CMOS (vídeos: [MOSFET](https://www.youtube.com/watch?v=2melpVNjecI), [CMOS e porta NOT](https://www.youtube.com/watch?v=rQN0KVdicDU))
@@ -23,6 +24,7 @@ Exemplo de tradução de C para assembly do RISC-V: [vídeo](https://www.youtube
 - Recursão
 
 # RISC-V - Ciclo único
+
 - Caminho de dados - Instruções aritméticas
 - Caminho de dados - Instruções de memória
 - Caminho de dados - Instruções de salto (incondicional)
@@ -30,3 +32,4 @@ Exemplo de tradução de C para assembly do RISC-V: [vídeo](https://www.youtube
 - Unidade de Controle
 - Análise de tempo, frequência de operação
 
+Vídeos de como implementar uma ISA de 8 bits usando o simulador logisim-evolution: [playlist](https://www.youtube.com/playlist?list=PLNH5D_GBXFJPC-yn9d7IT3YeyCh0RQXIe)
