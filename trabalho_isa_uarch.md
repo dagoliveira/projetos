@@ -1,4 +1,6 @@
-# Trabalho ISA e Microarquitetura
+# Trabalho ISA e Microarquitetura - 2026/2
+
+O trabalho pode ser feito em duplas.
 
 Pouco texto precisa ser produzido. Portanto, quem usar IA para gerar textos longos, desnecessários e/ou sem sentido (demonstrando que o aluno não tem domínio do tema, ou não revisou o texto), **poderá perder até 15 pontos!**
 
@@ -62,3 +64,9 @@ A microarquitetura desenvolvida pode ser monociclo (todas as instruções operam
 - Os códigos em linguagem de máquina (binário)
 - Os códigos em linguagem de programação, como C ou outra de alto nível, para a função recursiva e a multiplicação de matrizes
 
+
+## Avaliação
+
+O trabalho deve ser apresentado, e a falta de apresentação implica em nota zero. A nota será individual. 
+
+Será avaliado, principalmente, o domínio sobre o tema. Cada aluno deve ser capaz de explciar os impactos de cada decisão, e os detalhes da implementação da ISA.
