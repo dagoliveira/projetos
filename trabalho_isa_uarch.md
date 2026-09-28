@@ -2,6 +2,8 @@
 
 O trabalho pode ser feito em duplas. Envie essa informação ao professor até o dia 16/10 (nome da dupla, ou trabalho individual).
 
+O prazo para envio do trabalho é dia 11/11 às 12h (meio dia). Arquivos enviados em atraso serão desconsiderados. Portanto, envie pelo menos uma versão incompleta com antecedência.
+
 Pouco texto precisa ser produzido. Portanto, quem usar IA para gerar textos longos, desnecessários e/ou sem sentido (demonstrando que o aluno não tem domínio do tema, ou não revisou o texto), **poderá perder até 15 pontos!**
 
 O trabalho será dividido em três partes:
