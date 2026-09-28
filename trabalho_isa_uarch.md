@@ -1,6 +1,6 @@
 # Trabalho ISA e Microarquitetura - 2026/2
 
-O trabalho pode ser feito em duplas.
+O trabalho pode ser feito em duplas. Envie essa informação ao professor até o dia 16/10 (nome da dupla, ou trabalho individual).
 
 Pouco texto precisa ser produzido. Portanto, quem usar IA para gerar textos longos, desnecessários e/ou sem sentido (demonstrando que o aluno não tem domínio do tema, ou não revisou o texto), **poderá perder até 15 pontos!**
 
@@ -68,5 +68,7 @@ A microarquitetura desenvolvida pode ser monociclo (todas as instruções operam
 ## Avaliação
 
 O trabalho deve ser apresentado, e a falta de apresentação implica em nota zero. A nota será individual. 
+
+A agenda de apresentações será divulgada com antecedência.
 
 Será avaliado, principalmente, o domínio sobre o tema. Cada aluno deve ser capaz de explciar os impactos de cada decisão, e os detalhes da implementação da ISA.
