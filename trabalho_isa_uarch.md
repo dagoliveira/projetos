@@ -14,6 +14,8 @@ O trabalho será dividido em três partes:
 
 Total de 100 pontos.
 
+A seguinte playlist contém vídeos mostrando como implementar uma ISA de 8 bits: [playlist](https://www.youtube.com/playlist?list=PLNH5D_GBXFJPC-yn9d7IT3YeyCh0RQXIe).
+
 ## ISA
 
 Uma ISA deve ser definida respeitando os seguintes requisitos:
